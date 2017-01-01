@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52B3C30304F7D520335E82C4 /* Pods_Denon_Controller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F9E1D6583E19ED488555AA /* Pods_Denon_Controller.framework */; };
+		9816CB4F1E214D670049443A /* DevicesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9816CB4E1E214D670049443A /* DevicesStore.swift */; };
+		9816CB541E215B470049443A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9816CB531E215B470049443A /* Utils.swift */; };
+		981EEE301E1FDF5300121D77 /* ConfigurationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981EEE2F1E1FDF5300121D77 /* ConfigurationFetcher.swift */; };
+		984557721E1670A3009EA8C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984557711E1670A3009EA8C1 /* AppDelegate.swift */; };
+		984557741E1670A3009EA8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984557731E1670A3009EA8C1 /* Assets.xcassets */; };
+		984557771E1670A3009EA8C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 984557751E1670A3009EA8C1 /* MainMenu.xib */; };
+		984557831E168467009EA8C1 /* MediaControlBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984557821E168467009EA8C1 /* MediaControlBar.swift */; };
+		98502CC91E1C1605004FE4A1 /* ChangeEventsListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98502CC81E1C1605004FE4A1 /* ChangeEventsListener.swift */; };
+		98502CCB1E1C19A9004FE4A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98502CCA1E1C19A9004FE4A1 /* Constants.swift */; };
+		985DFEAF1E19A4C6008DC38B /* SetPlaystateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DFEAE1E19A4C6008DC38B /* SetPlaystateOperation.swift */; };
+		985DFEB11E19B2AE008DC38B /* PlaygroupDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985DFEB01E19B2AE008DC38B /* PlaygroupDetails.swift */; };
+		987DCF0C1E1AB20900D5DDC7 /* PlayNextOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987DCF0B1E1AB20900D5DDC7 /* PlayNextOperation.swift */; };
+		987DCF0E1E1AB3C200D5DDC7 /* PlayPreviousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987DCF0D1E1AB3C200D5DDC7 /* PlayPreviousOperation.swift */; };
+		987DCF101E1AB6B700D5DDC7 /* GenericOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987DCF0F1E1AB6B700D5DDC7 /* GenericOperation.swift */; };
+		987DCF121E1ACEAA00D5DDC7 /* NetworkMediaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987DCF111E1ACEAA00D5DDC7 /* NetworkMediaController.swift */; };
+		987DCF141E1ADC6F00D5DDC7 /* OperationsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987DCF131E1ADC6F00D5DDC7 /* OperationsFactory.swift */; };
+		987DCF161E1AEF1500D5DDC7 /* GetNowPlayingMediaOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987DCF151E1AEF1500D5DDC7 /* GetNowPlayingMediaOperation.swift */; };
+		987DCF181E1B073E00D5DDC7 /* GetPlayersOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987DCF171E1B073E00D5DDC7 /* GetPlayersOperation.swift */; };
+		987DCF1A1E1B08C700D5DDC7 /* GetGroupsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987DCF191E1B08C700D5DDC7 /* GetGroupsOperation.swift */; };
+		9893C58A1E198E820010D3BA /* DeviceConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C5891E198E820010D3BA /* DeviceConnection.swift */; };
+		9893C58C1E199D440010D3BA /* SetGroupVolumeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C58B1E199D440010D3BA /* SetGroupVolumeOperation.swift */; };
+		98C16A371E202CD700A968C9 /* GetPlaystateOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C16A361E202CD700A968C9 /* GetPlaystateOperation.swift */; };
+		98C16A391E202E9D00A968C9 /* GetGroupVolumeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C16A381E202E9D00A968C9 /* GetGroupVolumeOperation.swift */; };
+		98ED82481E16913C00CA66EC /* VolumeControlBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED82471E16913C00CA66EC /* VolumeControlBarButton.swift */; };
+		98ED824A1E16A53400CA66EC /* DenonServiceDiscovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED82491E16A53400CA66EC /* DenonServiceDiscovery.swift */; };
+		98ED824E1E16E40700CA66EC /* SettingsMenuBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED824D1E16E40700CA66EC /* SettingsMenuBarButton.swift */; };
+		98ED82501E16F0A000CA66EC /* running-pikachu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 98ED824F1E16F0A000CA66EC /* running-pikachu.gif */; };
+		98ED82531E16F55B00CA66EC /* DenonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98ED82521E16F55B00CA66EC /* DenonModels.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60F9E1D6583E19ED488555AA /* Pods_Denon_Controller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Denon_Controller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9816CB4E1E214D670049443A /* DevicesStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DevicesStore.swift; path = source/DevicesStore.swift; sourceTree = "<group>"; };
+		9816CB531E215B470049443A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = source/Utils.swift; sourceTree = "<group>"; };
+		981EEE2F1E1FDF5300121D77 /* ConfigurationFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationFetcher.swift; path = source/ConfigurationFetcher.swift; sourceTree = "<group>"; };
+		9845576E1E1670A3009EA8C1 /* Denon Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Denon Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		984557711E1670A3009EA8C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		984557731E1670A3009EA8C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		984557761E1670A3009EA8C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		984557781E1670A3009EA8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		984557821E168467009EA8C1 /* MediaControlBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaControlBar.swift; sourceTree = "<group>"; };
+		98502CC81E1C1605004FE4A1 /* ChangeEventsListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeEventsListener.swift; path = source/ChangeEventsListener.swift; sourceTree = "<group>"; };
+		98502CCA1E1C19A9004FE4A1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = source/Constants.swift; sourceTree = "<group>"; };
+		985DFEAE1E19A4C6008DC38B /* SetPlaystateOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPlaystateOperation.swift; sourceTree = "<group>"; };
+		985DFEB01E19B2AE008DC38B /* PlaygroupDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroupDetails.swift; sourceTree = "<group>"; };
+		987DCF0B1E1AB20900D5DDC7 /* PlayNextOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayNextOperation.swift; path = source/operations/PlayNextOperation.swift; sourceTree = "<group>"; };
+		987DCF0D1E1AB3C200D5DDC7 /* PlayPreviousOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayPreviousOperation.swift; path = source/operations/PlayPreviousOperation.swift; sourceTree = "<group>"; };
+		987DCF0F1E1AB6B700D5DDC7 /* GenericOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenericOperation.swift; path = source/operations/GenericOperation.swift; sourceTree = "<group>"; };
+		987DCF111E1ACEAA00D5DDC7 /* NetworkMediaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMediaController.swift; sourceTree = "<group>"; };
+		987DCF131E1ADC6F00D5DDC7 /* OperationsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OperationsFactory.swift; path = source/OperationsFactory.swift; sourceTree = "<group>"; };
+		987DCF151E1AEF1500D5DDC7 /* GetNowPlayingMediaOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetNowPlayingMediaOperation.swift; path = source/operations/GetNowPlayingMediaOperation.swift; sourceTree = "<group>"; };
+		987DCF171E1B073E00D5DDC7 /* GetPlayersOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetPlayersOperation.swift; path = source/operations/GetPlayersOperation.swift; sourceTree = "<group>"; };
+		987DCF191E1B08C700D5DDC7 /* GetGroupsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetGroupsOperation.swift; path = source/operations/GetGroupsOperation.swift; sourceTree = "<group>"; };
+		9893C5891E198E820010D3BA /* DeviceConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceConnection.swift; sourceTree = "<group>"; };
+		9893C58B1E199D440010D3BA /* SetGroupVolumeOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetGroupVolumeOperation.swift; sourceTree = "<group>"; };
+		98C16A361E202CD700A968C9 /* GetPlaystateOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetPlaystateOperation.swift; path = source/operations/GetPlaystateOperation.swift; sourceTree = "<group>"; };
+		98C16A381E202E9D00A968C9 /* GetGroupVolumeOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GetGroupVolumeOperation.swift; path = source/operations/GetGroupVolumeOperation.swift; sourceTree = "<group>"; };
+		98ED82471E16913C00CA66EC /* VolumeControlBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControlBarButton.swift; sourceTree = "<group>"; };
+		98ED82491E16A53400CA66EC /* DenonServiceDiscovery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenonServiceDiscovery.swift; sourceTree = "<group>"; };
+		98ED824D1E16E40700CA66EC /* SettingsMenuBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMenuBarButton.swift; sourceTree = "<group>"; };
+		98ED824F1E16F0A000CA66EC /* running-pikachu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "running-pikachu.gif"; sourceTree = "<group>"; };
+		98ED82521E16F55B00CA66EC /* DenonModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenonModels.swift; sourceTree = "<group>"; };
+		A3C32902D0C123B47632B5FC /* Pods-Denon Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Denon Controller.release.xcconfig"; path = "Pods/Target Support Files/Pods-Denon Controller/Pods-Denon Controller.release.xcconfig"; sourceTree = "<group>"; };
+		D9F98C30A2AAFE15ED65D664 /* Pods-Denon Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Denon Controller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Denon Controller/Pods-Denon Controller.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9845576B1E1670A3009EA8C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B3C30304F7D520335E82C4 /* Pods_Denon_Controller.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8515D9A1D95E60459A3A63DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60F9E1D6583E19ED488555AA /* Pods_Denon_Controller.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		984557651E1670A3009EA8C1 = {
+			isa = PBXGroup;
+			children = (
+				984557701E1670A3009EA8C1 /* Denon Controller */,
+				9845576F1E1670A3009EA8C1 /* Products */,
+				EADEC992B35CCB489B1814AC /* Pods */,
+				8515D9A1D95E60459A3A63DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9845576F1E1670A3009EA8C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9845576E1E1670A3009EA8C1 /* Denon Controller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		984557701E1670A3009EA8C1 /* Denon Controller */ = {
+			isa = PBXGroup;
+			children = (
+				987DCF0A1E1AAEA800D5DDC7 /* Operations */,
+				98ED82511E16F43D00CA66EC /* Views */,
+				984557711E1670A3009EA8C1 /* AppDelegate.swift */,
+				984557731E1670A3009EA8C1 /* Assets.xcassets */,
+				984557751E1670A3009EA8C1 /* MainMenu.xib */,
+				984557781E1670A3009EA8C1 /* Info.plist */,
+				98ED82491E16A53400CA66EC /* DenonServiceDiscovery.swift */,
+				98ED824F1E16F0A000CA66EC /* running-pikachu.gif */,
+				98ED82521E16F55B00CA66EC /* DenonModels.swift */,
+				9893C5891E198E820010D3BA /* DeviceConnection.swift */,
+				985DFEB01E19B2AE008DC38B /* PlaygroupDetails.swift */,
+				987DCF111E1ACEAA00D5DDC7 /* NetworkMediaController.swift */,
+				987DCF131E1ADC6F00D5DDC7 /* OperationsFactory.swift */,
+				98502CC81E1C1605004FE4A1 /* ChangeEventsListener.swift */,
+				98502CCA1E1C19A9004FE4A1 /* Constants.swift */,
+				981EEE2F1E1FDF5300121D77 /* ConfigurationFetcher.swift */,
+				9816CB4E1E214D670049443A /* DevicesStore.swift */,
+				9816CB531E215B470049443A /* Utils.swift */,
+			);
+			path = "Denon Controller";
+			sourceTree = "<group>";
+		};
+		987DCF0A1E1AAEA800D5DDC7 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				987DCF0F1E1AB6B700D5DDC7 /* GenericOperation.swift */,
+				9893C58B1E199D440010D3BA /* SetGroupVolumeOperation.swift */,
+				985DFEAE1E19A4C6008DC38B /* SetPlaystateOperation.swift */,
+				987DCF0B1E1AB20900D5DDC7 /* PlayNextOperation.swift */,
+				987DCF0D1E1AB3C200D5DDC7 /* PlayPreviousOperation.swift */,
+				987DCF151E1AEF1500D5DDC7 /* GetNowPlayingMediaOperation.swift */,
+				987DCF171E1B073E00D5DDC7 /* GetPlayersOperation.swift */,
+				987DCF191E1B08C700D5DDC7 /* GetGroupsOperation.swift */,
+				98C16A361E202CD700A968C9 /* GetPlaystateOperation.swift */,
+				98C16A381E202E9D00A968C9 /* GetGroupVolumeOperation.swift */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		98ED82511E16F43D00CA66EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				984557821E168467009EA8C1 /* MediaControlBar.swift */,
+				98ED82471E16913C00CA66EC /* VolumeControlBarButton.swift */,
+				98ED824D1E16E40700CA66EC /* SettingsMenuBarButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EADEC992B35CCB489B1814AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9F98C30A2AAFE15ED65D664 /* Pods-Denon Controller.debug.xcconfig */,
+				A3C32902D0C123B47632B5FC /* Pods-Denon Controller.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9845576D1E1670A3009EA8C1 /* Denon Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9845577B1E1670A3009EA8C1 /* Build configuration list for PBXNativeTarget "Denon Controller" */;
+			buildPhases = (
+				D8E7541FBCCB2FE59583D372 /* [CP] Check Pods Manifest.lock */,
+				9845576A1E1670A3009EA8C1 /* Sources */,
+				9845576B1E1670A3009EA8C1 /* Frameworks */,
+				9845576C1E1670A3009EA8C1 /* Resources */,
+				B9F27445180662F0EF2D1476 /* [CP] Embed Pods Frameworks */,
+				3EE6DF7CBA45836A02A74CA8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Denon Controller";
+			productName = "Denon Controller";
+			productReference = 9845576E1E1670A3009EA8C1 /* Denon Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		984557661E1670A3009EA8C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					9845576D1E1670A3009EA8C1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 984557691E1670A3009EA8C1 /* Build configuration list for PBXProject "Denon Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 984557651E1670A3009EA8C1;
+			productRefGroup = 9845576F1E1670A3009EA8C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9845576D1E1670A3009EA8C1 /* Denon Controller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9845576C1E1670A3009EA8C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98ED82501E16F0A000CA66EC /* running-pikachu.gif in Resources */,
+				984557741E1670A3009EA8C1 /* Assets.xcassets in Resources */,
+				984557771E1670A3009EA8C1 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EE6DF7CBA45836A02A74CA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Denon Controller/Pods-Denon Controller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F27445180662F0EF2D1476 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Denon Controller/Pods-Denon Controller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8E7541FBCCB2FE59583D372 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9845576A1E1670A3009EA8C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				981EEE301E1FDF5300121D77 /* ConfigurationFetcher.swift in Sources */,
+				98ED82481E16913C00CA66EC /* VolumeControlBarButton.swift in Sources */,
+				987DCF0E1E1AB3C200D5DDC7 /* PlayPreviousOperation.swift in Sources */,
+				98C16A391E202E9D00A968C9 /* GetGroupVolumeOperation.swift in Sources */,
+				9893C58A1E198E820010D3BA /* DeviceConnection.swift in Sources */,
+				9816CB541E215B470049443A /* Utils.swift in Sources */,
+				9816CB4F1E214D670049443A /* DevicesStore.swift in Sources */,
+				984557721E1670A3009EA8C1 /* AppDelegate.swift in Sources */,
+				985DFEB11E19B2AE008DC38B /* PlaygroupDetails.swift in Sources */,
+				98502CC91E1C1605004FE4A1 /* ChangeEventsListener.swift in Sources */,
+				987DCF161E1AEF1500D5DDC7 /* GetNowPlayingMediaOperation.swift in Sources */,
+				987DCF181E1B073E00D5DDC7 /* GetPlayersOperation.swift in Sources */,
+				985DFEAF1E19A4C6008DC38B /* SetPlaystateOperation.swift in Sources */,
+				98C16A371E202CD700A968C9 /* GetPlaystateOperation.swift in Sources */,
+				984557831E168467009EA8C1 /* MediaControlBar.swift in Sources */,
+				98502CCB1E1C19A9004FE4A1 /* Constants.swift in Sources */,
+				98ED824A1E16A53400CA66EC /* DenonServiceDiscovery.swift in Sources */,
+				987DCF0C1E1AB20900D5DDC7 /* PlayNextOperation.swift in Sources */,
+				98ED82531E16F55B00CA66EC /* DenonModels.swift in Sources */,
+				987DCF1A1E1B08C700D5DDC7 /* GetGroupsOperation.swift in Sources */,
+				9893C58C1E199D440010D3BA /* SetGroupVolumeOperation.swift in Sources */,
+				98ED824E1E16E40700CA66EC /* SettingsMenuBarButton.swift in Sources */,
+				987DCF101E1AB6B700D5DDC7 /* GenericOperation.swift in Sources */,
+				987DCF141E1ADC6F00D5DDC7 /* OperationsFactory.swift in Sources */,
+				987DCF121E1ACEAA00D5DDC7 /* NetworkMediaController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		984557751E1670A3009EA8C1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				984557761E1670A3009EA8C1 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		984557791E1670A3009EA8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9845577A1E1670A3009EA8C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		9845577C1E1670A3009EA8C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F98C30A2AAFE15ED65D664 /* Pods-Denon Controller.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Denon Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "przybylski.Denon-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9845577D1E1670A3009EA8C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C32902D0C123B47632B5FC /* Pods-Denon Controller.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Denon Controller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "przybylski.Denon-Controller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		984557691E1670A3009EA8C1 /* Build configuration list for PBXProject "Denon Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				984557791E1670A3009EA8C1 /* Debug */,
+				9845577A1E1670A3009EA8C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9845577B1E1670A3009EA8C1 /* Build configuration list for PBXNativeTarget "Denon Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9845577C1E1670A3009EA8C1 /* Debug */,
+				9845577D1E1670A3009EA8C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 984557661E1670A3009EA8C1 /* Project object */;
+}
