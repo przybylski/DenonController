@@ -23,7 +23,11 @@ class VolumeControlBarButton : NSButton {
 		self.imageScaling = .scaleProportionallyDown
 		self.imagePosition = .imageLeft
 		self.image = NSImage(named: "icon-volume-mid")
-		self.volumeSlider = NSSlider(value: Double(self.volume)/100, minValue: 0.0, maxValue: 1.0, target: self, action: #selector(VolumeControlBarButton.volumeChanged))
+		self.volumeSlider = NSSlider()
+		self.volumeSlider?.minValue = 0.0
+		self.volumeSlider?.maxValue = 1.0
+		self.volumeSlider?.target = self
+		self.volumeSlider?.action = #selector(VolumeControlBarButton.volumeChanged)
 		self.volumeSlider!.isContinuous = false
 	}
 	

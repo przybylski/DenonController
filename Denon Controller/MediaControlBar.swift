@@ -48,15 +48,15 @@ class MediaControlBar : NSView {
 	}
 
 	func initSubviews() {
-		prevButton = NSButton(title: "prev", image: NSImage(named: "icon-prev")!, target: self, action: #selector(MediaControlBar.buttonClicked))
+		prevButton = self.newButton(title: "prev", image: NSImage(named: "icon-prev")!, target: self, action: #selector(MediaControlBar.buttonClicked))
 		insertButton(btn: prevButton!, after: self)
 		prevButton?.isEnabled = false
 
-		playButton = NSButton(title: "play", image: NSImage(named:"icon-play")!, target: self, action: #selector(MediaControlBar.buttonClicked))
+		playButton = self.newButton(title: "play", image: NSImage(named:"icon-play")!, target: self, action: #selector(MediaControlBar.buttonClicked))
 		insertButton(btn: playButton!, after: prevButton!)
 		playButton?.isEnabled = false
 
-		nextButton = NSButton(title: "next", image: NSImage(named: "icon-next")!, target: self, action: #selector(MediaControlBar.buttonClicked))
+		nextButton = self.newButton(title: "next", image: NSImage(named: "icon-next")!, target: self, action: #selector(MediaControlBar.buttonClicked))
 		insertButton(btn: nextButton!, after: playButton!)
 		nextButton?.isEnabled = false
 
@@ -90,6 +90,17 @@ class MediaControlBar : NSView {
 		} else if nextButton == btn {
 			nc.post(name: Notifications.MCNextButtonPressed, object: nil)
 		}
+	}
+
+	private func newButton(title: String, image: NSImage?, target: AnyObject, action: Selector?) -> NSButton {
+		let btn = NSButton()
+		btn.title = title
+		btn.image = image!
+		btn.target = target
+		btn.action = action
+		btn.imageScaling = .scaleProportionallyDown
+
+		return btn
 	}
 
 
