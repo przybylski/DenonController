@@ -29,6 +29,8 @@ class VolumeControlBarButton : NSButton {
 		self.volumeSlider?.target = self
 		self.volumeSlider?.action = #selector(VolumeControlBarButton.volumeChanged)
 		self.volumeSlider!.isContinuous = false
+		self.volumeSlider!.bounds = NSRect(x: 0, y: 0, width: 100, height: 20)
+		self.volumeSlider!.frame = self.volumeSlider!.bounds
 	}
 	
 	required init?(coder: NSCoder) {
